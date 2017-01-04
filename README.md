@@ -29,3 +29,38 @@ Sample input : 8
 -1 -4  4 -2 0 1 4 -5
 
 Sample Output : 7
+
+Problem : Recursive Sums (RecursiveSum.java)
+Explanation : write a program to compute the final single-digit sum. As the number N is very big, it is given in the following run length encoded format - N is represented as a sequence of M blocks, where each block i (0 ≤ i < M) is represented by two integers - (len[i], d[i]). This implies that the digit d[i] occurs len[i] number of times.
+
+For example, {(2,1), (1,2), (2,9)} represents the number 11299.
+ 
+We shall calculate the desired sum as: 1+1+2+9+9=22 (2+2)=4
+
+Input :
+The first line contains a single integer T, denoting the number of test cases.
+Each test case starts with a single integer M, which is the number of following run-length encoded blocks.
+Each of the next M lines contains two space separated integers: len[i] and d[i].
+
+Output :
+Print the single-digit sum for each of the T test cases in a new line.
+
+Sample Input :
+3
+3
+2 1
+1 2
+2 9
+1
+8 1
+3
+2 5
+1 4
+1 5
+
+Sample Output :
+4
+8
+1
+
+
